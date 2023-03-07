@@ -1,0 +1,95 @@
+.container {
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/hungergames-background.png");
+    animation:container_fade 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes container_fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.symbol{
+    height: 200px;
+    width: 200px;
+    position:absolute;
+    top:54%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    background-image:url("../images/hungergamescover-symbol.png");
+    animation: symbol_fade 7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes symbol_fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.title{
+    height: 200px;
+    width:400px;
+    position: absolute;
+    top:17%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/hungergamescover-title.png");
+    animation: title_move 3s;
+}
+
+@keyframes title_move{
+ 0%, 100%  { top: 0px; }
+ 50% { top: 117px; } 
+ 75%{top: 117px;}
+}
+
+h1{
+font-family: noka, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 36px;
+color:white; 
+}
+
+h2{
+font-family: noka, sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 40px;
+color:white
+}
+
+.author{
+ position:absolute;
+ top:76%;
+ left:52%;
+}
+
+h3{
+font-family: apolline, serif;
+font-weight: 400;
+font-style: italic;
+font-size: 15px;
+color: red;
+}
+
+.newyork{
+position:absolute;
+top:50%;
+left:50%;
+}
+
+h1:hover{
+    color: goldenrod;
+}
+h2:hover{
+    color: goldenrod;
+}
